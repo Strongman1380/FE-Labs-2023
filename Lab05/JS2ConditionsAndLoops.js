@@ -44,7 +44,16 @@ Question 1: Driving the speed limit.. ? \n`);
  * 
  * 
  * ↓ YOUR CODE HERE ↓ */
+var speedLimit = 60;
+var mySpeed = 70;
 
+def check_speed(speedLimit, mySpeed):
+    if mySpeed > speedLimit:  
+    print("Slow Down! Mom is mad!")
+    elif mySpeed === speedLimit:
+    print("Everyone is happy!")
+    else:
+    print("Speed up! Dad is mad!")
 
 
 /*-------------------------------------------------------*/
@@ -63,7 +72,14 @@ Question 2: Is it time to wake up for work? \n`);
  *         b. Otherwise, print "I can sleep in!" to the console.
  * 
  * ↓ YOUR CODE HERE ↓ */
+var alarmSet = true;
+var weekDay = true;
 
+def wake_up(alarmSet, weekDay):
+    if alarmSet && weekDay:
+    print("Sound Alarm! Time for work!")
+      else:
+    print("I can sleep in!")
 
 
 /*-------------------------------------------------------*/
@@ -81,7 +97,14 @@ Question 3: Username & Password \n`);
  *	        - otherwise, print "Admin Access Denied"
  * 
  * ↓ YOUR CODE HERE ↓ */
+var username = "Tommy123";
+var password = "12345";
+var username2 = "Timmy456";
+var password2 = "6789";
 
+def check_credentials(username, password, username2, password2):
+    if (username === "Tommy123" && password === "12345") || (username2 === "Timmy456" && password2 === "6789"):
+    print("Admin Login Successful")
 
 
 /*-------------------------------------------------------*/
@@ -117,6 +140,23 @@ Question 5: Loops! \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
+for (let i = 10; i >= -10; i--) {
+    console.log(i);
+}
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 50);
+
+i = 0;
+while (i <= 50) {
+    if (i % 4 === 0) {
+        console.log(i);
+    }
+    i++;
+}
 
 
 /*-------------------------------------------------------*/
@@ -130,7 +170,7 @@ Question 6: Debugging an infinite loop! \n`);
  * Step 2: Uncomment out to test
  * 
  * ↓ YOUR CODE HERE ↓ */
-
+change i++ to i-- to prevent an infinite loop
    /*    
    for (let i = 11; i > 10; i++) { 
       console.log(i);   
